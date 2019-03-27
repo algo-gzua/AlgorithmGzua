@@ -52,6 +52,6 @@ int main(void) {
 
 		dfs(num, change, 0, 0);
 
-		printf("#%d %d\n", c, result);
+		printf("#%d %d\n", c , result);
 	}
 }
