@@ -1,42 +1,57 @@
 #include<iostream>
-#include<vector>
 #include<algorithm>
 #include <string>
 
 using namespace std;
-int result = 0;
-void dfs(string num, int n_size, int change, int cnt,int here) {
+int result;
+
+void dfs(string num, int change, int cnt, int here) {
 	if (cnt == change) { result = max(result, stoi(num)); return; }
 	else {
+		int n_size = num.size();
+		bool judge = false;
 		for (int i = here; i < n_size - 1; i++) {
 			for (int j = i + 1; j < n_size; j++) {
 				if (num[i] <= num[j]) {
 					char tmp = num[i];
 					num[i] = num[j];
 					num[j] = tmp;
-					dfs(num, n_size, change, cnt + 1,here);
+					dfs(num, change, cnt + 1, i);
 					tmp = num[i];
 					num[i] = num[j];
 					num[j] = tmp;
+					judge = true;
 				}
 			}
+		}
+
+		if (!judge) {
+			char tmp = num[n_size - 2];
+			num[n_size - 2] = num[n_size - 1];
+			num[n_size - 1] = tmp;
+			dfs(num, change, cnt + 1, 0);
+			tmp = num[n_size - 2];
+			num[n_size - 2] = num[n_size - 1];
+			num[n_size - 1] = tmp;
 		}
 	}
 }
 
 int main(void) {
-	int C; scanf("%d", &C);
+	int C;
+	scanf("%d", &C);
 
 	for (int c = 1; c <= C; c++) {
-		char NUM[10]; scanf("%s", NUM);
-		string num;	num = NUM;
-		
-		int n_size = num.size();
+		string num;
+		cin >> num;
 
-		int change; scanf("%d", &change);
+		int change;
+		scanf("%d", &change);
+
 		result = 0;
-		dfs(num, n_size, change, 0,0);
-		printf("#%d %d\n",c,result);
-		
+
+		dfs(num, change, 0, 0);
+
+		printf("#%d %d\n", c, result);
 	}
 }
