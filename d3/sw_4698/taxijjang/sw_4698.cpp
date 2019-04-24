@@ -1,5 +1,5 @@
 #include<iostream>
-#define SIZE 2000000
+#define SIZE 2000001
 using namespace std;
 
 bool arr[SIZE];
