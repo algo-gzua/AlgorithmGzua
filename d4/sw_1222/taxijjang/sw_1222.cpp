@@ -47,7 +47,5 @@ int main(void) {
 		}
 
 		printf("#%d %d\n", t, num.top());
-
-
 	}
 }
