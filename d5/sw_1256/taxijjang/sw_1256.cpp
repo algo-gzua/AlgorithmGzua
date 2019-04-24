@@ -31,6 +31,5 @@ int main(void) {
 
 			cout << "#" << t << " " << arr[n] << "\n";
 		}
-		
 	}
 }
