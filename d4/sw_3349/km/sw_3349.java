@@ -25,89 +25,18 @@ public class Solution {
                     int newX = Integer.parseInt(temp[0]);
                     int newY = Integer.parseInt(temp[1]);
 
-                    // x가 작고 y가 작을 때 y값 맞을 때 까지 x, y + 1 이후 모자란거 ++
-                    if (currX < newX && currY < newY) {
-                        while (currX != newX && currY != newY) {
-                            currX++;
-                            currY++;
-                            result++;
-                        }
+                    int diffX = newX - currX;
+                    int diffY = newY - currY;
 
-                        while (currX != newX) {
-                            currX++;
-                            result++;
-                        }
-
-                        while (currY != newY) {
-                            currY++;
-                            result++;
-                        }
+                    // 둘의 부호가 다를 때
+                    if (diffX * diffY <= 0) {
+                        result += Math.abs(diffX);
+                        result += Math.abs(diffY);
                     }
-                    // x가 작고 y가 클 때	 y값을 맞을 때 까지 y - 1 이후 x++
-                    else if (currX < newX && currY > newY) {
-                        while (currY != newY) {
-                            currY--;
-                            result++;
-                        }
-
-                        while (currX != newX) {
-                            currX++;
-                            result++;
-                        }
-                    }
-                    // x가 크고 y가 작을 때 y값 맞을 때 까지 y + 1 이후 x--
-                    else if (currX > newX && currY < newY) {
-                        while (currY != newY) {
-                            currY++;
-                            result++;
-                        }
-
-                        while (currX != newX) {
-                            currX--;
-                            result++;
-                        }
-                    }
-                    // x가 크고 y도 클 때	 y값 맞을 때 까지 x, y - 1 이후 모자란거 --
-                    else if (currX > newX && currY > newY){
-                        while (currX != newX && currY != newY) {
-                            currX--;
-                            currY--;
-                            result++;
-                        }
-
-                        while (currX != newX) {
-                            currX--;
-                            result++;
-                        }
-
-                        while (currY != newY) {
-                            currY--;
-                            result++;
-                        }
-                    }
-                    // y값만 다를 때
-                    else if (currX == newX && currY != newY) {
-                        while (currY > newY) {
-                            currY--;
-                            result++;
-                        }
-
-                        while (currY < newY) {
-                            currY++;
-                            result++;
-                        }
-                    }
-                    // x값만 다를 때
-                    else if (currX != newX && currY == newY) {
-                        while (currX > newX) {
-                            currX--;
-                            result++;
-                        }
-
-                        while (currX < newX) {
-                            currX++;
-                            result++;
-                        }
+                    // 둘의 부호가 같을 때
+                    else {
+                        result += Math.min(Math.abs(diffX), Math.abs(diffY));
+                        result += Math.abs(diffX - diffY);
                     }
 
                     currX = newX;
