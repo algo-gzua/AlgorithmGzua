@@ -2,7 +2,7 @@
 #include<algorithm>
 
 #define SIZE 101
-#define INF 99999999
+#define INF 9999999
 using namespace std;
 
 int arr[SIZE][SIZE];
