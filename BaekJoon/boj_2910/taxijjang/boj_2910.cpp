@@ -14,6 +14,11 @@ typedef struct Data {
 
 }Data;
 
+/*
+나온 숫자의 갯수가 같을 경우
+먼저 나온 숫자대로 정렬을 하였고
+나머지는 숫자의 갯수대로 정렬
+*/
 struct cmp {
 	bool operator()(Data d1, Data d2) {
 		if (d1.cnt == d2.cnt) {
@@ -22,6 +27,11 @@ struct cmp {
 		return d1.cnt < d2.cnt;
 	}
 };
+
+/*
+정렬기준을 숫자가 같으면
+먼저 나온 숫자대로 정렬을 함
+*/
 typedef struct In {
 	int num = 0;
 	int loc = 0;
@@ -38,7 +48,7 @@ In arr[SIZE];
 int main(void) {
 	int N, C; scanf("%d %d", &N, &C);
 
-	priority_queue<Data,vector<Data>,cmp> pq;
+	priority_queue<Data, vector<Data>, cmp> pq;
 
 	int index = 1;
 	for (int i = 0; i < N; i++) {
@@ -59,7 +69,7 @@ int main(void) {
 		}
 		else if (num != arr[i].num) {
 			Data dd;
-			dd.cnt = cnt; dd.loc = n_first; dd.num = -num;
+			dd.cnt = cnt; dd.loc = n_first; dd.num = num;
 			pq.push(dd);
 			num = arr[i].num;
 			cnt = 1;
@@ -72,7 +82,7 @@ int main(void) {
 
 	if (judge = true) {
 		Data dd;
-		dd.cnt = cnt; dd.loc = n_first; dd.num = -num;
+		dd.cnt = cnt; dd.loc = n_first; dd.num = num;
 		pq.push(dd);
 	}
 
@@ -80,9 +90,9 @@ int main(void) {
 	for (int i = 0; i < pq_size; i++) {
 		int cnt = pq.top().cnt;
 		for (int j = 0; j < cnt; j++) {
-			printf("%d ", -pq.top().num);
+			printf("%d ", pq.top().num);
 		}
 		pq.pop();
 	}
-	getchar();
+	return 0;
 }
