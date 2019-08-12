@@ -31,24 +31,24 @@ struct cmp {
 	}
 };
 
-s_Data isShortpath(int sang_x, int sang_y,int dis, int sang_size) {
+s_Data isShortpath(int sang_x, int sang_y, int dis, int sang_size) {
 	s_Data d; d = { sang_x,sang_y,dis,sang_size };
 	queue<s_Data> q;
 	priority_queue<s_Data, vector<s_Data>, cmp> pq;
 	is_feed = false;
-	q.push({ sang_x,sang_y, dis});
+	q.push({ sang_x,sang_y, dis });
 	visited[sang_x][sang_y] = true;
 	while (!q.empty()) {
 		int h_x = q.front().x;
 		int h_y = q.front().y;
 		int h_dis = q.front().dis;
-		
+
 		q.pop();
 		for (int i = 0; i < 4; i++) {
 			int n_x = h_x + x[i];
 			int n_y = h_y + y[i];
 			int n_dis = h_dis + 1;
-			
+
 			if (visited[n_x][n_y] == true)
 				continue;
 			//예외처리 부분
@@ -76,12 +76,12 @@ s_Data isShortpath(int sang_x, int sang_y,int dis, int sang_size) {
 }
 
 int main(void) {
-	int sang_x, sang_y, sang_size =2;
+	int sang_x, sang_y, sang_size = 2;
 	scanf("%d", &N);
 	for (int i = 1; i <= N; i++) {
 		for (int j = 1; j <= N; j++) {
 			scanf("%d", &arr[i][j]);
-			if (arr[i][j] == 9) 
+			if (arr[i][j] == 9)
 				sang_x = i, sang_y = j;
 		}
 	}
@@ -94,9 +94,13 @@ int main(void) {
 	arr[sang_x][sang_y] = 0;
 	while (is_feed) {
 		is_feed = false;
-		fill(&visited[0][0], &visited[SIZE][SIZE], false);
-		d = isShortpath(d.x, d.y,d.dis , d.size);
-		
+		for (int i = 0; i <SIZE; i++) {
+			for (int j = 0; j<SIZE; j++) {
+				visited[i][j] = false;
+			}
+		}
+		d = isShortpath(d.x, d.y, d.dis, d.size);
+
 		if (is_feed) {
 			num[d.x][d.y] = num_cnt++;
 			arr[d.x][d.y] = 0;
