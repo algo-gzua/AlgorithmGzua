@@ -7,9 +7,9 @@ using namespace std;
 
 typedef struct Data {
 	int x, y, num;
-	Data *left= NULL, *right=NULL;
+	Data *left = NULL, *right = NULL;
 
-	bool operator<(Data d){
+	bool operator<(Data d) {
 		if (x == d.x)
 			return y < d.y;
 		return x > d.x;
@@ -68,15 +68,11 @@ vector<vector<int>> solution(vector<vector<int>> nodeinfo) {
 	Data *newnode;
 
 	newnode = (Data *)malloc(sizeof(Data));
-	newnode->left = NULL; newnode->right = NULL;
-	newnode->x = D[0].x; newnode->y = D[0].y;
-	newnode->num = D[0].num;
+	newnode = &D[0];
 	root = newnode;
 	for (int i = 1; i < n_size; i++) {
 		newnode = (Data *)malloc(sizeof(Data));
-		newnode->left = NULL; newnode->right = NULL;
-		newnode->x = D[i].x; newnode->y = D[i].y;
-		newnode->num = D[i].num;
+		newnode = &D[i];
 		dfs(root, newnode);
 	}
 
@@ -90,15 +86,15 @@ vector<vector<int>> solution(vector<vector<int>> nodeinfo) {
 int main(void) {
 	ios::sync_with_stdio(false);
 	vector<vector<int>> n({
-		 vector<int>({5,3}),
-		 vector<int>({11,5}),
-		 vector<int>({ 13,3 }),
-		 vector<int>({ 3,5 }),
-		 vector<int>({ 6,1 }),
-		 vector<int>({ 1,3 }),
-		 vector<int>({ 8,6 }),
-		 vector<int>({ 7,2 }),
-		 vector<int>({ 2,2 })
+		vector<int>({ 5,3 }),
+		vector<int>({ 11,5 }),
+		vector<int>({ 13,3 }),
+		vector<int>({ 3,5 }),
+		vector<int>({ 6,1 }),
+		vector<int>({ 1,3 }),
+		vector<int>({ 8,6 }),
+		vector<int>({ 7,2 }),
+		vector<int>({ 2,2 })
 	});
 
 	vector<vector<int>> res = solution(n);
