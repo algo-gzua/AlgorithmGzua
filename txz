@@ -1,0 +1,628 @@
+[33mcommit f4971e17daaf6b4118999d1df09b11b8489612cc[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: unknown <t2korea@naver.com>
+Date:   Sat Aug 31 16:30:55 2019 +0900
+
+    solve #21 7. 프렌즈4 블록
+
+[33mcommit a965b3ec12f89ffa25fd8e3ceeb859ac835ec0df[m
+Author: taxijjang <gw9122@naver.com>
+Date:   Fri Aug 30 01:23:29 2019 +0900
+
+    solve #21 8. 캐시
+
+[33mcommit 6dd39a5cbbb1becb0a18a54e14d73790e8ed5503[m
+Author: hr <nfzoze01@gmail.com>
+Date:   Wed Aug 28 18:08:18 2019 +0900
+
+    solve #20 boj_12865
+
+[33mcommit d86f857817994f1464b044bb1bd1cd221d0104b4[m
+Author: unknown <t2korea@naver.com>
+Date:   Wed Aug 28 09:00:30 2019 +0900
+
+    solve #20 boj_12865
+
+[33mcommit 3d9e3ecc97a11db25fcaa4f055e68fbf272b6705[m
+Author: hr <nfzoze01@gmail.com>
+Date:   Wed Aug 28 01:01:31 2019 +0900
+
+    solve #19 boj_10775
+
+[33mcommit b46f39137db1abbb94102572262a29ba1f38096f[m
+Author: taxijjang <gw9122@naver.com>
+Date:   Tue Aug 27 22:32:33 2019 +0900
+
+    solve #20 boj_12865
+
+[33mcommit 6de1054da3c56f86a4325455ae75f1c2e7ef52a5[m
+Author: taxijjang <gw9122@naver.com>
+Date:   Tue Aug 27 22:18:21 2019 +0900
+
+    solve #19 boj_10775
+
+[33mcommit b18be9b0d7e4b59ab98ad9514e976dfee13f2202[m
+Author: unknown <t2korea@naver.com>
+Date:   Sat Aug 17 01:56:21 2019 +0900
+
+    solve #19 boj 10775
+
+[33mcommit 082c35c1140df49d822b57f475724afa865d8b4d[m
+Author: KM <sodp2@naver.com>
+Date:   Fri Aug 16 17:25:20 2019 +0900
+
+    solve #20 boj_12865
+
+[33mcommit ec028b5de5e4548e625ed0c288c4723418ed4758[m
+Merge: a927497 777b9b4
+Author: taxijjang <gw9122@Naver.com>
+Date:   Thu Aug 15 17:28:03 2019 +0900
+
+    Merge branch 'master' of https://github.com/algo-gzua/SW-Expert-Academy
+
+[33mcommit a927497dabd79392a7835bd1293324a915d21dd1[m
+Author: taxijjang <gw9122@Naver.com>
+Date:   Thu Aug 15 17:26:54 2019 +0900
+
+    solve #20 boj_14890
+
+[33mcommit 777b9b4bc267da9191fead899eef921332bc1828[m
+Author: unknown <t2korea@naver.com>
+Date:   Wed Aug 14 18:55:39 2019 +0900
+
+    solve #19 boj_2042
+
+[33mcommit e95ed3d0596559c8651da3794f684e23278f0bca[m
+Author: KM <sodp2@naver.com>
+Date:   Tue Aug 13 16:14:36 2019 +0900
+
+    solve #19 boj_11049
+
+[33mcommit 2e6a8727ab1982ef37101d741c235f7734a8c7d0[m
+Author: taxijjang <gw9122@naver.com>
+Date:   Mon Aug 12 23:12:19 2019 +0900
+
+    solve #18 boj_16236
+
+[33mcommit 994fc4185f1ec1cb74bddf3c2d6d8e0e159e4af2[m
+Author: taxijjang <gw9122@Naver.com>
+Date:   Mon Aug 12 19:11:54 2019 +0900
+
+    fail #18 boj_16236
+
+[33mcommit 2fa649518f9dc470e28248770df946bbb5b3b56e[m
+Author: KM <sodp2@naver.com>
+Date:   Sun Aug 11 23:33:14 2019 +0900
+
+    solve #18 boj_16236
+
+[33mcommit f5752cba30225eb217a1ae371a95b790422e85fc[m
+Author: taxijjang <gw9122@naver.com>
+Date:   Sat Aug 10 21:12:06 2019 +0900
+
+    solve #18 boj_11049
+
+[33mcommit d739577d9dcda81f1eb754a88c49a6b3ddfbc2d5[m
+Author: taxijjang <gw9122@naver.com>
+Date:   Sat Aug 10 17:56:43 2019 +0900
+
+    solve #18 boj_11066
+
+[33mcommit 7af56e988d3c4f87d1a32c1765de18491a70d807[m
+Author: KM <sodp2@naver.com>
+Date:   Thu Aug 8 08:57:03 2019 +0900
+
+    solve #17 boj_10775
+
+[33mcommit e360e5906bcec1581d16a3d1c7f0288b07b6ae06[m
+Author: hr <nfzoze01@gmail.com>
+Date:   Tue Aug 6 23:33:08 2019 +0900
+
+    solve #16 boj_14499
+
+[33mcommit 6aeac7a08e9c1ab41824de51e9a01819ca90bffb[m
+Author: hr <nfzoze01@gmail.com>
+Date:   Mon Aug 5 16:52:11 2019 +0900
+
+    solve #17 boj_1309
+
+[33mcommit d8195780da6ec7d08454fe449d43fbaea1c3249e[m
+Author: KM <sodp2@naver.com>
+Date:   Mon Aug 5 11:22:21 2019 +0900
+
+    solve #17 boj_1309
+
+[33mcommit bf442948502c5a455a4703d9b69e50b094752145[m
+Author: hr <nfzoze01@gmail.com>
+Date:   Mon Aug 5 09:44:11 2019 +0900
+
+    solve #17 boj_6359
+
+[33mcommit 6a146e2efaa19fe1b595b82a48b1758c1cff87e6[m
+Author: taxijjang <gw9122@Naver.com>
+Date:   Sun Aug 4 17:49:29 2019 +0900
+
+    solve #17 boj_1309
+
+[33mcommit 2975301147ae45142c483aa1df8f5cd51b667d9b[m
+Author: taxijjang <gw9122@Naver.com>
+Date:   Sun Aug 4 17:15:09 2019 +0900
+
+    solve #17 boj_1507
+
+[33mcommit 6d784c4cf32a3b51026036939baff29f853469d8[m
+Author: taxijjang <gw9122@naver.com>
+Date:   Sun Aug 4 12:35:25 2019 +0900
+
+    solve #17 boj_6359
+
+[33mcommit 67cb553c2796c6fbdb975770633367b94356e0ab[m
+Author: KM <sodp2@naver.com>
+Date:   Fri Aug 2 10:08:12 2019 +0900
+
+    solve #17 boj_6359
+
+[33mcommit d19e0507578da0155bf34eebdf37e6aa3927d65f[m
+Author: unknown <t2korea@naver.com>
+Date:   Thu Aug 1 01:17:58 2019 +0900
+
+    solve #17 boj_6359
+
+[33mcommit 789a40574970e76e9cabfa8bc2219177362e23b0[m
+Author: KM <sodp2@naver.com>
+Date:   Thu Aug 1 00:27:18 2019 +0900
+
+    solve #16 boj_1946
+
+[33mcommit 0ac24d686dbf596cc81111e373afcb6c0fd88a3b[m
+Author: unknown <t2korea@naver.com>
+Date:   Wed Jul 31 01:55:29 2019 +0900
+
+     solve #16 boj_1699
+
+[33mcommit 1a25aef6a536598b64be5850e1115b38986c4002[m
+Author: hr <nfzoze01@gmail.com>
+Date:   Wed Jul 31 00:16:12 2019 +0900
+
+    solve #16 boj_1946
+
+[33mcommit dd5ccd34d5401ff44bfa92ec9a9c050cd56f13c3[m
+Author: unknown <t2korea@naver.com>
+Date:   Tue Jul 30 23:55:51 2019 +0900
+
+    solve #16 boj_9461
+
+[33mcommit 82c4a0c1973bf381203e8498b735d2ae9573da67[m
+Author: hr <nfzoze01@gmail.com>
+Date:   Tue Jul 30 23:48:27 2019 +0900
+
+    solve #16 boj_9461
+
+[33mcommit 00b5442b153bc6798a66ca3b4d3093bac6c7b522[m
+Author: KM <sodp2@naver.com>
+Date:   Tue Jul 30 23:44:42 2019 +0900
+
+    solve #16 boj_2042
+
+[33mcommit 52f1f585bb40417a5666ad0504def6cfc232f418[m
+Author: KM <sodp2@naver.com>
+Date:   Tue Jul 30 14:12:17 2019 +0900
+
+    solve #16 boj_14499
+
+[33mcommit 27c549bd570d428c1d17ab372d79bed63bd4fc81[m
+Author: taxijjang <gw9122@Naver.com>
+Date:   Tue Jul 30 12:41:52 2019 +0900
+
+    solve #16 boj_2042
+
+[33mcommit 7a6a4d781df08c4efd9e42e6c1696ac7657566e2[m
+Author: taxijjang <gw9122@naver.com>
+Date:   Sun Jul 28 13:44:12 2019 +0900
+
+    solve #16 boj_1699
+
+[33mcommit ad9c92520d8742781dcd4d63bbaeef5a61a5bde9[m
+Author: taxijjang <gw9122@Naver.com>
+Date:   Sat Jul 27 15:47:24 2019 +0900
+
+    solve #16 boj_1946
+
+[33mcommit dc575de4e5bf49fdb28d6ff622e23defcb6b917b[m
+Author: KM <sodp2@naver.com>
+Date:   Fri Jul 26 15:09:43 2019 +0900
+
+    solve #16 boj_9461
+
+[33mcommit 4474245a0731fbfd7aea237a3c5d14502fcb71b6[m
+Merge: 4220049 13cd6c7
+Author: taxijjang <gw9122@naver.com>
+Date:   Thu Jul 25 15:24:55 2019 +0900
+
+    Merge branch 'master' of https://github.com/algo-gzua/SW-Expert-Academy
+
+[33mcommit 4220049616c9c42fd8d8aa4f8436ceee4d96f99e[m
+Author: taxijjang <gw9122@naver.com>
+Date:   Thu Jul 25 15:23:34 2019 +0900
+
+    solve #16 boj_9461
+
+[33mcommit 13cd6c7a6ede864bca1ae208e18c1ab59663fb82[m
+Author: unknown <t2korea@naver.com>
+Date:   Wed Jul 24 17:53:06 2019 +0900
+
+    fail #15 boj_2014
+
+[33mcommit b8a7e8ea9d692ad376e079be7500e2af50650b50[m
+Author: unknown <t2korea@naver.com>
+Date:   Wed Jul 24 17:25:38 2019 +0900
+
+    solve #15 boj_14501
+
+[33mcommit 6ac72c28925fd651a2fc507e7d3c39c45b4b36de[m
+Author: unknown <t2korea@naver.com>
+Date:   Wed Jul 24 17:24:36 2019 +0900
+
+    solve #15 boj_2352
+
+[33mcommit 9cd2e5f4038ba91d06bf2f9cfb1b0ca72b45a2cc[m
+Author: KM <sodp2@naver.com>
+Date:   Tue Jul 23 19:31:04 2019 +0900
+
+    solve #15 boj_2352
+
+[33mcommit 09e8f616850edc91276a51d0bc39175d1dc4373e[m
+Author: hr <nfzoze01@gmail.com>
+Date:   Tue Jul 23 19:17:00 2019 +0900
+
+    solve #15 boj_2014
+
+[33mcommit aaa7b8c6bf89b3ff96e48aae9e0508078d5f0e13[m
+Author: KM <sodp2@naver.com>
+Date:   Mon Jul 22 18:02:46 2019 +0900
+
+    solve #15 boj_14501
+
+[33mcommit 7a2c6cfeda7250e2910dd45e2a07b7c8cfa715b0[m
+Author: taxijjang <gw9122@Naver.com>
+Date:   Sun Jul 21 18:30:03 2019 +0900
+
+    sovle #15 boj_2014
+
+[33mcommit 01905e00c149e19343746bc09a1b46bd245e8e30[m
+Author: hr <nfzoze01@gmail.com>
+Date:   Fri Jul 19 00:13:12 2019 +0900
+
+    solve #15 boj_2352
+
+[33mcommit b08d82a111c37342b455a4b08f5532b9a981dfee[m
+Author: hr <nfzoze01@gmail.com>
+Date:   Fri Jul 19 00:12:04 2019 +0900
+
+    solve #15 boj_14501
+
+[33mcommit 2e5770253249ebdc30139d43b686224ca89e9ec5[m
+Author: taxijjang <gw9122@Naver.com>
+Date:   Tue Jul 16 18:56:43 2019 +0900
+
+    solve #15 boj_14501
+
+[33mcommit a030bacbe4b8e9ddee527349f7571c25bd466e8c[m
+Author: taxijjang <gw9122@Naver.com>
+Date:   Tue Jul 16 16:19:05 2019 +0900
+
+    solve #15 boj_2352
+
+[33mcommit 1a0acef7e44b2b67909cf9ef4e5a2599d5fbdca8[m
+Author: hr <nfzoze01@gmail.com>
+Date:   Sun Jul 14 02:38:42 2019 +0900
+
+    solve #14 boj_2589
+
+[33mcommit 04b13715450dbe3bb1919d5be294a0890b4b940e[m
+Author: taxijjang <gw9122@Naver.com>
+Date:   Sun Jul 14 00:36:50 2019 +0900
+
+    solve #14 boj_1049
+
+[33mcommit 746bfe2fa2ebd4a6a28ce7b24e0af056d49b84b7[m
+Author: taxijjang <gw9122@Naver.com>
+Date:   Sun Jul 14 00:20:42 2019 +0900
+
+    solve #14 boj_2589
+
+[33mcommit 3b401f9702dc14f34b7019475ec02a711dae0863[m
+Author: hr <nfzoze01@gmail.com>
+Date:   Sat Jul 13 23:58:54 2019 +0900
+
+    solve #14 boj_2910
+
+[33mcommit 0113af488cd6c4990c2405e7052ef8614a976c9e[m
+Author: KM <sodp2@naver.com>
+Date:   Sat Jul 13 22:38:46 2019 +0900
+
+    solve #14 boj_2225
+
+[33mcommit 60d0f4f76d85f5b8c2e1453961b26c45b9265e00[m
+Author: taxijjang <gw9122@Naver.com>
+Date:   Sat Jul 13 21:13:12 2019 +0900
+
+     solve #14 boj_2225
+
+[33mcommit 132cc67eabab931cb023ac8b6f53f6d833e31e61[m
+Author: hr <nfzoze01@gmail.com>
+Date:   Sat Jul 13 20:00:09 2019 +0900
+
+    solve #14 boj_2225
+
+[33mcommit 0d2ffefa947d6cbfa3f4c77f6e83adbb39870b25[m
+Author: unknown <t2korea@naver.com>
+Date:   Sat Jul 13 06:59:02 2019 +0900
+
+    fail #14 boj_2589
+
+[33mcommit a802c9a10ccbf8b4fdfc01cc25fdaad77f1b0037[m
+Author: hr <nfzoze01@gmail.com>
+Date:   Sat Jul 13 01:19:40 2019 +0900
+
+    solve #14 boj_1967
+
+[33mcommit f929b0ada3fac43861cca926eb4a8f3ce8b58894[m
+Author: unknown <t2korea@naver.com>
+Date:   Fri Jul 12 05:07:25 2019 +0900
+
+    solve #14 boj_2225
+
+[33mcommit aaa7ffc754e92faa65eca828cffc638571a91952[m
+Merge: 6953bcc 4926669
+Author: hr <nfzoze01@gmail.com>
+Date:   Wed Jul 10 18:30:13 2019 +0900
+
+    Merge branch 'master' of https://github.com/algo-gzua/SW-Expert-Academy
+
+[33mcommit 4926669868d2787dfe04e0d7c26f56c727954d28[m
+Author: unknown <t2korea@naver.com>
+Date:   Wed Jul 10 08:42:23 2019 +0900
+
+    solve #14 boj_1049
+
+[33mcommit 01c620315293224006f99c4d3c908df249e698b7[m
+Merge: 09e6376 a5cfa99
+Author: unknown <t2korea@naver.com>
+Date:   Wed Jul 10 08:39:42 2019 +0900
+
+    Merge branch 'master' of https://github.com/algo-gzua/SW-Expert-Academy
+
+[33mcommit a5cfa999888c1c4e7f264f9b7debf43ad22eb9cd[m
+Author: KM <sodp2@naver.com>
+Date:   Tue Jul 9 19:34:07 2019 +0900
+
+    solve #14 boj_1967
+
+[33mcommit d557df088dd2efe82a0a18a70a3d0297748c3fe0[m
+Author: KM <sodp2@naver.com>
+Date:   Tue Jul 9 18:52:01 2019 +0900
+
+    solve #14 boj_2910
+
+[33mcommit 0b34cb3ba4489fefb21af727df03d6d7d8edf0c5[m
+Author: taxijjang <gw9122@Naver.com>
+Date:   Tue Jul 9 17:11:55 2019 +0900
+
+    solve #14 boj_2910
+
+[33mcommit d8ed147d538ca777d31206ca899442762b22f3c0[m
+Author: taxijjang <gw9122@Naver.com>
+Date:   Tue Jul 9 17:07:10 2019 +0900
+
+    solve #14 boj_2910
+
+[33mcommit 20b3e2d7390e1a4d91e12dfbe5444fd40cb3fa2a[m
+Merge: 2b10675 fd18607
+Author: taxijjang <gw9122@Naver.com>
+Date:   Tue Jul 9 15:52:57 2019 +0900
+
+    giMerge branch 'master' of https://github.com/algo-gzua/SW-Expert-Academy
+
+[33mcommit 2b10675457f71848ab10f31e76e3f6c56b0dfb22[m
+Author: taxijjang <gw9122@Naver.com>
+Date:   Tue Jul 9 15:51:36 2019 +0900
+
+    solve #14 boj_1967
+
+[33mcommit fd1860784f7fad5eeaa2e67a3280df651fe3ad09[m
+Author: KM <sodp2@naver.com>
+Date:   Sat Jul 6 22:11:44 2019 +0900
+
+    solve #14 boj_2589
+
+[33mcommit 552537a36f9e50e58c80e87a89f9fe5dfc37a156[m
+Author: KM <sodp2@naver.com>
+Date:   Sat Jul 6 20:45:37 2019 +0900
+
+    solve #14 boj_1049
+
+[33mcommit 6953bccca58ede317fb7579e2c0b5e070e7d6313[m
+Author: hr <nfzoze01@gmail.com>
+Date:   Thu Jul 4 18:42:54 2019 +0900
+
+    solve #14 boj_1049
+
+[33mcommit 354792989d9b9ecb9aeb0385c03e6520a0357bf2[m
+Author: hr <nfzoze01@gmail.com>
+Date:   Wed Jul 3 17:24:45 2019 +0900
+
+    #13 solve 2217
+
+[33mcommit 304b15d50d2d1b2ff3a8250deac9715805f97027[m
+Author: taxijjang <gw9122@naver.com>
+Date:   Wed Jul 3 13:44:22 2019 +0900
+
+    #13 solve boj_2217
+
+[33mcommit 44f4e76e05d642d36963b872d026972d8cfd03bd[m
+Author: taxijjang <gw9122@naver.com>
+Date:   Wed Jul 3 13:05:30 2019 +0900
+
+    #13 solve boj_2644
+
+[33mcommit 09e637697745aadfae2294e143ab4d2749226a99[m
+Author: unknown <t2korea@naver.com>
+Date:   Wed Jul 3 07:26:16 2019 +0900
+
+    #13 solve boj_1965
+
+[33mcommit bbc77e70713db0c64a1f7df168bbe7cbcb74253e[m
+Author: unknown <t2korea@naver.com>
+Date:   Wed Jul 3 06:21:46 2019 +0900
+
+    #solve13 boj_1920
+
+[33mcommit 37e8281495beda1acbd8caf435f16d77ff5f71a6[m
+Author: unknown <t2korea@naver.com>
+Date:   Wed Jul 3 03:33:39 2019 +0900
+
+    #13 solve boj_2217
+
+[33mcommit f21e086fafa6c479c5366961debd2131784c33a8[m
+Author: hr <nfzoze01@gmail.com>
+Date:   Tue Jul 2 23:35:38 2019 +0900
+
+    #12 solve boj_1931
+
+[33mcommit a8a02ff897f73e70d687716bb27a66093c32b430[m
+Author: hr <nfzoze01@gmail.com>
+Date:   Tue Jul 2 19:03:37 2019 +0900
+
+    #13 solve boj_2644
+
+[33mcommit 1bc56e895e43aab879b6f11f92ed667684d732e4[m
+Author: hr <nfzoze01@gmail.com>
+Date:   Mon Jul 1 22:04:36 2019 +0900
+
+    #13 solve boj_1920
+
+[33mcommit 57b869cbfb0a26e03c542064ea6d8d61d0677e80[m
+Author: hr <nfzoze01@gmail.com>
+Date:   Mon Jul 1 20:53:07 2019 +0900
+
+    #13 solve boj_1965
+
+[33mcommit e41c357fd4c3286db7102873af86d6e14e7aaba7[m
+Author: taxijjang <gw9122@Naver.com>
+Date:   Sun Jun 30 19:48:01 2019 +0900
+
+    #13 solve boj_1965
+
+[33mcommit ea0c59339064b94a33c45a0e3f65f0508ff308f5[m
+Author: taxijjang <gw9122@Naver.com>
+Date:   Sun Jun 30 19:47:11 2019 +0900
+
+    #13 solve boj+1920
+
+[33mcommit 20b0b7650804f82958e59be94b9a9f7280646e19[m
+Author: taxijjang <gw9122@Naver.com>
+Date:   Sun Jun 30 19:09:38 2019 +0900
+
+    #13 solve boj_1920
+
+[33mcommit 4e4233ed483942a807eb5f1b969997bd979b104e[m
+Author: hr <nfzoze01@gmail.com>
+Date:   Wed Jun 26 21:32:24 2019 +0900
+
+    #12 solve boj_11053
+
+[33mcommit 37f3739430a77e7bee4115d4e175a87f6de16d7b[m
+Author: taxijjang <gw9122@naver.com>
+Date:   Wed Jun 26 14:47:45 2019 +0900
+
+    #12 sovle boj_1931
+
+[33mcommit 52a48f0a24fefd39d11c1cce663fd5f80882210b[m
+Author: KM <sodp2@naver.com>
+Date:   Wed Jun 26 05:25:19 2019 +0900
+
+    #12 solve boj_11053
+
+[33mcommit 6208f28adf8c1f5b0f6bb10ba25ff4fbde92fc9c[m
+Author: unknown <t2korea@naver.com>
+Date:   Wed Jun 26 05:15:37 2019 +0900
+
+    #12 solve boj_1931
+
+[33mcommit c1b5729066014a84e13dd2fb0d29e0b073b06efc[m
+Author: unknown <t2korea@naver.com>
+Date:   Wed Jun 26 03:59:07 2019 +0900
+
+    #12 memory... boj_1931
+
+[33mcommit 1f585a33363c72c8ce777f10cebca3753614167f[m
+Author: taxijjang <gw9122@naver.com>
+Date:   Tue Jun 25 23:54:22 2019 +0900
+
+    #12 solve sw_6719
+
+[33mcommit 9b4aca122910318572b131b6b7952f36cb42b1f8[m
+Author: taxijjang <gw9122@naver.com>
+Date:   Tue Jun 25 23:42:18 2019 +0900
+
+    #12 solve boj_9095
+
+[33mcommit 9d23eeea4a808bde62bae3a4c8a18eac30594905[m
+Author: taxijjang <gw9122@naver.com>
+Date:   Tue Jun 25 23:29:30 2019 +0900
+
+    #12 solve boj_11053
+
+[33mcommit 137c80349f0b1b35a81037f6cbbc48d29097117e[m
+Author: unknown <t2korea@naver.com>
+Date:   Tue Jun 25 20:28:06 2019 +0900
+
+    #12 solve sw_6719
+
+[33mcommit c21687c0bb2bde32f3d686f041ef623e2b991be1[m
+Author: hr <nfzoze01@gmail.com>
+Date:   Tue Jun 25 20:10:10 2019 +0900
+
+    #11 solve boj_1149
+
+[33mcommit 20e299f8b46d71dac251aa467cd122b079a1f633[m
+Author: hr <nfzoze01@gmail.com>
+Date:   Tue Jun 25 19:37:34 2019 +0900
+
+    #12 solve boj_9095
+
+[33mcommit da9954a8e7d3a729c8a5a3939bd513cfe0784bf6[m
+Author: hr <nfzoze01@gmail.com>
+Date:   Tue Jun 25 18:04:17 2019 +0900
+
+    #12 solve sw_6719
+
+[33mcommit 3d61aae801942cf6fed33701b40a6753cd2bb33d[m
+Author: hr <nfzoze01@gmail.com>
+Date:   Tue Jun 25 17:22:02 2019 +0900
+
+    #12 solve boj_1978
+
+[33mcommit 32633aad11fddc9f87f6b44f6e8e6cee4d1c7413[m
+Author: taxijjang <gw9122@naver.com>
+Date:   Tue Jun 25 01:30:40 2019 +0900
+
+    #12 solve boj_1978
+
+[33mcommit 3d330c551c4583cd78858fd96ed743a6055e3acd[m
+Author: KM <sodp2@naver.com>
+Date:   Mon Jun 24 19:05:47 2019 +0900
+
+    #12 solve boj_9095
+
+[33mcommit 6d7aca93b0aa3ea99e9ac74f57c9a10a995f9023[m
+Author: unknown <t2korea@naver.com>
+Date:   Mon Jun 24 03:23:24 2019 +0900
+
+    #12 solve boj_9095
+
+[33mcommit 6d43fe7c61ddf2e3a8537e3c7779279ccac53f30[m
+Author: unknown <t2korea@naver.com>
+Date:   Sun Jun 23 23:39:58 2019 +0900
+
+    #12 solve boj_1978
