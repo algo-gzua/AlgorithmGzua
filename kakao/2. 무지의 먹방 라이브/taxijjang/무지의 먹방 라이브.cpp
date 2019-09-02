@@ -6,58 +6,45 @@
 typedef long long int ll;
 using namespace std;
 
+bool cmp(pair<int, int> p1, pair<int, int> p2) {
+	return p1.second < p2.second;
+}
 int solution(vector<int> food_times, ll k) {
 
-	vector<int> f; f.resize((int)food_times.size());
-	copy(food_times.begin(), food_times.end(), f.begin());
+	vector<pair<int, int>> f;
+	int food_size = food_times.size();
+
+	for (int i = 0; i < food_size; i++) {
+		f.push_back({ food_times[i], i + 1 });
+	}
 
 	sort(f.begin(), f.end());
 
-	ll sum = 0;
-	ll k_mok, k_na;
-	int f_size = f.size();
-	ll size = f.size();
+	int size = f.size();
 	int tmp = 0;
-	int res = -1;
-
-	if (k / size > f[f_size - 1])
-		return res;
-
-	for (int i = 0; i < f_size; i++) {
-		k_mok = k / size; k_na = k%size;
-		if (tmp == f[i]) {
-			size--;
+	for (auto it = f.begin(); it != f.end(); it++, size--) {
+		ll gap = (ll)(it->first - tmp)*size;
+		if (gap == 0)
 			continue;
+		if (gap <= k) {
+			k -= gap;
+			tmp = it->first;
 		}
-		tmp = f[i];
-		if ((k_mok < f[i] + sum) || k_mok == 0) {
-			break;
-		}
-		else if (k_mok >= f[i] + sum) {
-			k = k - (size * (f[i] - sum));
-			sum += f[i] - sum;
-			size--;
+		else {
+			sort(it, f.end(), cmp);
+			return (it + (k%size))->second;
 		}
 	}
-	int food_size = food_times.size();
+	return -1;
+}
+int main(void) {
+	ios::sync_with_stdio(false);
 
-	int cnt = 0;
-	bool check = false;
-	int index;
-	for (int i = 0; i < food_size; i++) {
-		if (food_times[i] <= sum) {
-			if (k_mok == 0)
-				cnt++;
-			continue;
-		}
+	vector<int> f;
+	f.push_back(3);
+	f.push_back(1);
+	f.push_back(2);
+	ll k = 5;
 
-		if (cnt == k_na) {
-			index = i;
-			check = true;
-			break;
-		}
-		cnt++;
-	}
-	res = index + 1;
-	return res;
+	cout << solution(f, k);
 }
