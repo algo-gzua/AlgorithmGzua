@@ -1,7 +1,6 @@
-
-package com.company;
 import java.io.*;
-import java.util.Stack;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 public class Main {
     public static BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
@@ -12,10 +11,12 @@ public class Main {
     static class Node {
         int y;
         int x;
+        int dis;
 
-        Node(int y, int x) {
+        Node(int y, int x, int dis) {
             this.y = y;
             this.x = x;
+            this.dis = dis;
         }
     }
 
@@ -46,27 +47,22 @@ public class Main {
     }
 
     public static int direction(int[][] direction, int destinationY, int destinationX) throws IOException {
-        int distance = 0, minDistance = 0;
-        boolean flag = false;
+        int distance = 0;
 
         boolean[][] visit = new boolean[n][m];
 
-        Stack<Node> stack = new Stack<>();
+        Deque<Node> queue = new ArrayDeque<Node>();
 
-        stack.add(new Node(0, 0));
+        queue.add(new Node(0, 0, 1));
         visit[0][0] = true;
 
-        while (!stack.isEmpty()) {
-            Node node = stack.pop();
-
-            distance++;
+        while (!queue.isEmpty()) {
+            Node node = queue.pop();
+            distance = node.dis+1;
 
             if (node.y == destinationY && node.x == destinationX) {
-                if(!flag) minDistance = distance;
-                minDistance = Math.min(minDistance, distance);
-                distance = 0;
-                flag = true;
-                continue;
+                distance--;
+                break;
             }
 
             for (int i = 0; i < 4; ++i) {
@@ -83,11 +79,10 @@ public class Main {
 
                 if (maze[newY][newX] == 1) {
                     visit[newY][newX] = true;
-                    stack.add(new Node(newY, newX));
+                    queue.add(new Node(newY, newX, distance));
                 }
             }
-
         }
-        return minDistance;
+        return distance;
     }
 }
