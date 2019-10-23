@@ -29,10 +29,19 @@ public class Main {
                     map[i][j] = Integer.parseInt(st.nextToken());
                 }
             }
-            while(!check(map)){
+
+            while(check(map) == 0 || check(map) == 1 || check(map) == 2){
+                if(check(map) == 2){
+                    sb.append(Year);
+                    break;
+                }else if(check(map)==1){
+                    sb.append("0");
+                    break;
+                }
                 melting(map);
+
             }
-            sb.append(Year);
+
             bw.write(sb.toString());
             bw.flush();
 
@@ -44,20 +53,17 @@ public class Main {
     static void melting(int[][] map){
         Queue<Pair> q = new LinkedList<>();
         int[][] cnt = new int[N][M];
-
         for(int i=0;i<N;i++){
             for(int j=0;j<M;j++){
-
                 if(map[i][j] != 0){
                     Pair p = new Pair(i,j);
                     q.add(p);
                 }
-
                 int c = 0;
                 for(int k=0;k<4;k++){
                     int ny = i+dir[k][0];
                     int nx = j+dir[k][1];
-                    if(ny>=0 && nx>=0 && ny<N && nx<M && map[ny][nx] != 0){
+                    if(ny>=0 && nx>=0 && ny<N && nx<M && map[i][j] != 0 && map[ny][nx] == 0){
                         c++;
                     }
                 }
@@ -68,43 +74,49 @@ public class Main {
         while(!q.isEmpty()){
             Pair p = q.poll();
             map[p.y][p.x] -= cnt[p.y][p.x];
+            if(map[p.y][p.x] < 0){
+                map[p.y][p.x] = 0;
+            }
         }
         Year++;
     }
 
-    static boolean check(int[][] map){
+    static int check(int[][] map){
         boolean[][] visited = new boolean[N][M];
+        boolean flag = false;
         Queue<Pair> q = new LinkedList<>();
 
-        Loop1: for(int i=0;i<N;i++){
-            for(int j=0;j<M;j++){
-                if(map[i][j] != 0){
-                    Pair p = new Pair(i,j);
-                    q.add(p);
-                    break Loop1;
-                }
-            }
-        }
-
-        while(!q.isEmpty()){
-            Pair p = q.poll();
-            visited[p.y][p.x] = true;
-            for(int k=0;k<4;k++){
-                int ny = p.y+dir[k][0];
-                int nx = p.x+dir[k][1];
-                if(ny>=0 && nx>=0 && ny<N && nx<M && map[ny][nx] != 0 && !visited[ny][nx]){
-                    Pair p2 = new Pair(ny,nx);
-                    q.add(p2);
-                }
-            }
-        }
         for(int i=0;i<N;i++){
             for(int j=0;j<M;j++){
-                if(map[i][j] != 0 && !visited[i][j]){
-                    return true;
+                if(map[i][j] != 0 && !visited[i][j] && !flag){
+                    flag = true;
+                    Pair p = new Pair(i,j);
+                    q.add(p);
+                    while(!q.isEmpty()){
+                        p = q.poll();
+                        visited[p.y][p.x] = true;
+                        for(int k=0;k<4;k++){
+                            int ny = p.y+dir[k][0];
+                            int nx = p.x+dir[k][1];
+                            if(ny>=0 && nx>=0 && ny<N && nx<M && map[ny][nx] != 0 && !visited[ny][nx]){
+                                visited[ny][nx] = true;
+                                Pair p2 = new Pair(ny,nx);
+                                q.add(p2);
+                            }
+                        }
+                    }
+                }
+                //섬이 두개일때
+                if(map[i][j] != 0 && !visited[i][j] && flag){
+                    return 2;
+                }
+                //섬이 모두 가라앉았을때
+                if(i==N-1 && j==M-1 && !flag){
+                    return 1;
                 }
             }
         }
-        return false;
+        //섬이 아직 한덩어리일때
+        return 0;
     }
 }
