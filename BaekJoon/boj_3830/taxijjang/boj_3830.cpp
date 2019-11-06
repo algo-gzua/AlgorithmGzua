@@ -8,48 +8,100 @@
 #include<cstring>
 
 #define INF 2e9
-#define SIZE 1010
+#define SIZE 101000
 
 using namespace std;
 
 typedef long long int ll;
 
-vector<int> cost;
+ll parrent[SIZE];
+ll dist[SIZE];
+bool visited[SIZE];
+
+vector<pair<ll, ll>> tree[SIZE];
+vector<pair<int, int>> query;
+int N, M;
+
+void fill_() {
+	for (int i = 0; i <= N; i++) {
+		parrent[i] = i;
+		dist[i] = 0;
+		tree[i].clear();
+		visited[i] = false;
+	}
+	query.clear();
+}
+int find(int node) {
+	if (parrent[node] == node)
+		return node;
+	else {
+		return parrent[node] = find(parrent[node]);
+	}
+}
+bool _union(int a, int b) {
+	int aRoot = find(a);
+	int bRoot = find(b);
+
+	if (aRoot == bRoot)
+		return 0;
+	else {
+		parrent[bRoot] = aRoot;
+		return 1;
+	}
+}
+
+void make_tree(pair<ll, ll> here) {
+	visited[here.first] = true;
+	dist[here.first] = here.second;
+	for (auto next : tree[here.first]) {
+		if (visited[next.first] != true) {
+			next.second += here.second;
+			make_tree(next);
+		}
+	}
+}
 int main(void) {
 	ios::sync_with_stdio(false);
 	cin.tie(NULL); cout.tie(NULL);
 
-	int N, M; cin >> N >> M;
-	int min_cost = 0;
-	for (int i = 0; i < N; i++) {
-		int day; cin >> day;
-		cost.push_back(day);
-		min_cost = min_cost > day ? min_cost : day;
-	}
+	while (1) {
+		cin >> N >> M;
+		if (N == 0 && M == 0)
+			break;
 
-	int left = min_cost, right = INF, mid;
-	int res = INF;
-	while (left <= right) {
-		mid = (left + right) / 2;
-		int tmp = 0;
-		int K = 0;
-		for (auto it = cost.begin(); it != cost.end(); it++) {
-			if (tmp < *it) {
-				K++;
-				tmp = mid - *it;
+		fill_();
+		for (int i = 1; i <= M; i++) {
+			char menu; cin >> menu;
+			if (menu == '!') {
+				ll a, b, cost; cin >> a >> b >> cost;
+				if (a > b) { swap(a, b); cost *= -1; }
+				if (_union(a, b)) {
+					tree[a].push_back({ b,cost });
+					tree[b].push_back({ a,-cost });
+				}
+			}
+			else if (menu == '?') {
+				ll a, b; cin >> a >> b;
+				if (find(a) != find(b)) {
+					query.push_back({ -1,-1 });
+				}
+				else
+					query.push_back({ a,b });
+			}
+		}
+
+		for (int i = 1; i <= N; i++) {
+			if (visited[i] != true)
+				make_tree({ i,dist[i] });
+		}
+
+		for (int i = 0; i < query.size(); i++) {
+			if (query[i].first == -1 && query[i].second == -1) {
+				cout << "UNKNOWN\n"; continue;
 			}
 			else {
-				tmp -= *it;
+				cout << dist[query[i].second] - dist[query[i].first] << "\n";
 			}
 		}
-
-		if (M < K) {
-			left = mid + 1;
-		}
-		else {
-			res = res < mid ? res : mid;
-			right = mid - 1;
-		}
 	}
-	cout << res;
-} 
+}
