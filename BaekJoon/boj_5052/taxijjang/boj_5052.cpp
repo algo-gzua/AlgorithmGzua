@@ -7,7 +7,7 @@
 #include<map>
 #define INF 2e9
 #define SIZE 11
-#define MAX 10010
+#define MAX 10011
 using namespace std;
 
 typedef long long int ll;
